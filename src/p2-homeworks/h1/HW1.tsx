@@ -1,33 +1,26 @@
 import React from 'react'
-
-const messageData = {
+import Message from "./Message";
+export const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
     message: 'some text',
-    time: '22:00',
+    // time: '22:00',
+    // name: 'Some Name',
 }
 
+
+
 function HW1() {
+
     return (
         <div>
             <hr/>
-            homeworks 1
-
-            {/*should work (должно работать)*/}
-
-            {/*<Message*/}
-            {/*    avatar={messageData.avatar}*/}
-            {/*    name={messageData.name}*/}
-            {/*    message={messageData.message}*/}
-            {/*    time={messageData.time}*/}
-            {/*/>*/}
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
+            <Message avatar={messageData.avatar} message={messageData.message}
+                // name={messageData.name}
+                // time={messageData.time}
+            />
             <hr/>
         </div>
-    )
+    );
 }
 
-export default HW1
+export default HW1;
